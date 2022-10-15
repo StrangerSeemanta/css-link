@@ -1,0 +1,33 @@
+button.btn{
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+    color: white;
+    box-shadow: 5px 5px 6px 0px grey;
+    transition:box-shadow 0.2s linear;
+}
+button.btn.btn-blue-official{
+  background-color: rgba(0, 0, 255);
+}
+button.btn:hover{
+    filter:brightness(0.85)
+}
+button.btn.hover-none:hover{
+  filter:brightness(1)
+}
+button.btn:active{
+    width: 145px;
+    height:56.5px;
+    box-shadow: none;
+}
+button.btn.active-none:active{
+    width: 150px;
+      height: 60px;
+
+  box-shadow: 5px 5px 6px 0px grey;
+}
