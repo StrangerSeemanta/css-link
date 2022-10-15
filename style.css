@@ -1,18 +1,20 @@
-button.btn{
-    width: 150px;
-    height: 60px;
-    border-radius: 5px;
+/* All rigths reserved to Seemanta Sarker Shuvo. visit www.github.com/strangerseemanta..Thanks for using the cdn*/
+:root{
+    --defaultBtnBgCol:teal;
+    --defaultBtnTxCol:white;
+  --mediumWidth:115px;
+  --mediumHeight:54px;
+}
+/* Btn */
+button.btn
+{
+    padding:10px;
     font-size: large;
     cursor: pointer;
     border: none;
     outline: none;
-    
-    color: white;
     box-shadow: 5px 5px 6px 0px grey;
     transition:box-shadow 0.2s linear;
-}
-button.btn.btn-blue-official{
-  background-color: rgba(0, 0, 255);
 }
 button.btn:hover{
     filter:brightness(0.85)
@@ -21,13 +23,43 @@ button.btn.hover-none:hover{
   filter:brightness(1)
 }
 button.btn:active{
-    width: 145px;
-    height:56.5px;
+   transform:scale(0.95);
     box-shadow: none;
 }
 button.btn.active-none:active{
-    width: 150px;
-      height: 60px;
+    width: var(--mediumWidth);
+      height: var(--mediumHeight);
 
   box-shadow: 5px 5px 6px 0px grey;
+}
+
+/* Colors */
+button.btn.blue{
+  background-color: rgba(0, 0, 255);
+}
+button.btn.green{
+  background-color: rgba(6, 201, 38);
+}
+button.btn.grey{
+  background-color: grey;
+}
+button.btn.red{
+  background-color: red;
+}
+button.btn.indigo{
+  background-color: indigo;
+}
+
+/* Sizing */
+button.btn.btn-official{
+  padding:none;
+  width: var(--mediumWidth);
+   height: var(--mediumHeight);
+  border-radius:9px;
+    color:var(--defaultBtnTxCol);
+}
+
+/* styles */
+button.btn.style-key{
+  border:outset 3px whitesmoke;
 }
